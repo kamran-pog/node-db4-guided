@@ -11,7 +11,7 @@ const port = 4000
 server.use(helmet())
 server.use(express.json())
 
-// server.use(welcome)
+server.use(welcome)
 server.use(zoosRouter)
 server.use(animalsRouter)
 server.use(speciesRouter)
