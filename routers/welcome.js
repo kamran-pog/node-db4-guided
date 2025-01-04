@@ -1,10 +1,10 @@
-const express = require("express");
-const router = express.Router();
+// const express = require("express");
+// const router = express.Router();
 
-router.get("/", (req, res) => {
-    res.status(200).json ({
-        message: "Welcome to our API"
-    })
-})
+// router.get("/", (req, res) => {
+//     res.status(200).json ({
+//         message: "Welcome to our API"
+//     })
+// })
 
-module.exports = router;
+// module.exports = router;

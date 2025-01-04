@@ -1,6 +1,6 @@
 const express = require("express")
 const helmet = require("helmet")
-const welcome = require("./routers/welcome")
+const welcome = require("./api/index")
 const zoosRouter = require("./routers/zoos")
 const animalsRouter = require("./routers/animals")
 const speciesRouter = require("./routers/species")
