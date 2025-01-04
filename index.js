@@ -1,15 +1,17 @@
 const express = require("express")
 const helmet = require("helmet")
+const welcome = require("./routers/welcome")
 const zoosRouter = require("./routers/zoos")
 const animalsRouter = require("./routers/animals")
 const speciesRouter = require("./routers/species")
 
 const server = express()
-const port = process.env.PORT || 4000
+const port = 4000
 
 server.use(helmet())
 server.use(express.json())
 
+server.use(welcome)
 server.use(zoosRouter)
 server.use(animalsRouter)
 server.use(speciesRouter)
