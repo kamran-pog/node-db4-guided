@@ -6,6 +6,6 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [{ "src": "/(.*)", "dest": "/animals" }]
+    "routes": [{ "src": "/(.*)", "dest": "animals.js" }]
 
 }
